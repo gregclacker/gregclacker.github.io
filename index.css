@@ -1,8 +1,62 @@
-#prmImg {
-    border-radius: 50%;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slategray;
+    margin: 0;
+}
+
+a {
+    list-style: none;
+}
+
+#prm {
+    border-style: groove;
+    border-color: black;
+    border-width: 10px;
+    background-color: aliceblue;
+    object-fit: contain;
+    padding: 4px;
+    overflow: hidden;
+}
+
+#prm img {
     width: 150px;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
+    float: left;
+    border-radius: 10%;
+    padding-right: 10px;
+}
+
+.navbar ul{
+    /* removes bullet points */
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar li{
+    float:left;
+    text-decoration: none;
+    padding: 15px;
     display: block;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar {
+    position: sticky;
+}
+
+.navbar a:hover{
+    box-shadow: 0 0 50px white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: lightblue;
+    background-color: transparent;
 }
